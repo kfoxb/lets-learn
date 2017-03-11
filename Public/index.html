@@ -1,7 +1,7 @@
 <!doctype html>
 
 
-<html ng-app="letsLearnColors">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,20 +10,23 @@
     <script src="app.js"></script>
     <link rel="stylesheet" href="/styles.css">
 </head>
-<body ng-controller="appController">
-    <div class="container">
+<body ng-app="letsLearnColors">
+    <app></app>
+</body>
+</html>
+
+    <!-- <div class="container">
         <div>
             <h1>Let's Learn Colors</h1>
         </div>
-        <!-- COLOR PICTURES -->
-        <div id="img-list" class="row">
-            <div class="col-sm-4 col-sm-offset-4">
+ -->        <!-- COLOR PICTURES -->
+        <!-- <div id="img-list">
+            <div> -->
                 <!-- LOOP OVER THE IMAGES IN $scope.images -->
-                <div ng-repeat="image in images" ng-click="playAudio()">
-                    <img ng-src="{{image.imgUrl}}"/>
-                </div>
+                <!-- <div ng-repeat="image in images" ng-controller="itemController">
+                    <img ng-src="{{image.imgUrl}}" ng-click="playAudio()"/>
+                </div> -->
+                <!-- <items></items>
             </div>
         </div>
-    </div>
-</body>
-</html>
+    </div> -->
