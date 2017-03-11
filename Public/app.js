@@ -1,7 +1,6 @@
-//this file will contain logic for angular
-let letsLearnColors = angular.module('letsLearnColors', []);
+let letsLearnColors = angular.module('letsLearnColors', [])
 
-mainController = function($scope, $http) {
+.controller('appController', ['$scope', '$http', function($scope, $http) {
   $scope.playAudio = function() {
     var audio = new Audio('aud/orange.wav');
     console.log(audio);
@@ -14,4 +13,4 @@ mainController = function($scope, $http) {
     .error(function(data) {
       console.log('Error: ' + data);
     });
-};
+}]);
