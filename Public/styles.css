@@ -1,3 +1,19 @@
 img {
-	display: inline-block;
+	float: left;
+	width: 27%;
+	margin: 15px;
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+}
+
+.itemsContainer {
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+
+h1 {
+	text-align: center;
 }

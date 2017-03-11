@@ -10,16 +10,15 @@ let letsLearnColors = angular.module('letsLearnColors', [])
         .error(function(data) {
           console.log('Error: ' + data);
         });
-    // $scope.items = [0, 1]//http get here;
     },
-    template: '<items-container></items-container>',
+    template: '<h1>Let\'s Learn Colors</h1><items-container></items-container>',
   };
 })
 .directive('itemsContainer', function() {
   return {
     restrict: 'E',
     template: `
-      <div>
+      <div class="itemsContainer">
         <item ng-repeat="item in items" item="item"></item>
       </div>`
   };
@@ -31,10 +30,7 @@ let letsLearnColors = angular.module('letsLearnColors', [])
     replace: true,
     template: `
       <div>
-        <span class="item-name">{{item.title}}</span>
-        <span>
           <img ng-src={{item.imgUrl}} ng-click="playAudio()"/>
-        </span>
       </div>`
   };
 })
