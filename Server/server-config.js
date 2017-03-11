@@ -9,12 +9,16 @@ let app = express();
 
 app.use(express.static(__dirname + '/../public'));
 app.use(express.static(__dirname + '/../assets'));
-console.log(__dirname);
 app.use(morgan('dev'));
+
 app.get('/api/img', (req, res) => {
   Images.find().then((images) => { 
     res.json(images); 
   });
+});
+
+app.get('*', function(req, res) {
+  res.sendfile('./public/index.html');
 });
 
 module.exports = app;
