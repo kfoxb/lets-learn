@@ -1,8 +1,10 @@
 let mongoose = require('mongoose');
 
-let Images = mongoose.model('Images', {
-  title: String,
-  url: String
+var imageSchema = mongoose.Schema({
+  title: { type: String, required: true },
+  url: { type: String, required: true }
 });
+
+let Images = mongoose.model('Images', imageSchema);
 
 module.exports = Images;
