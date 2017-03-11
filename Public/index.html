@@ -8,22 +8,18 @@
     <title>Let's Learn Colors</title>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     <script src="core.js"></script>
-
 </head>
 <body ng-controller="mainController">
     <div class="container">
         <div>
             <h1>Let's Learn Colors</h1>
         </div>
-
         <!-- COLOR PICTURES -->
         <div id="img-list" class="row">
             <div class="col-sm-4 col-sm-offset-4">
-
                 <!-- LOOP OVER THE IMAGES IN $scope.images -->
                 <div ng-repeat="image in images">
                     <img ng-src="{{image.url}}"/>
-                    <p>{{image.title}}</p>
                 </div>
             </div>
         </div>
