@@ -18,7 +18,7 @@ app.get('/api/img', (req, res) => {
 });
 
 app.get('*', function(req, res) {
-  res.sendfile('./public/index.html');
+  res.sendFile('./public/index.html');
 });
 
 module.exports = app;
