@@ -36,3 +36,6 @@ bower_components/
 
 # todo list
 todo.md
+
+#OSX specific
+.DS_Store
