@@ -1,17 +1,17 @@
 //this file will contain logic for angular
 let letsLearnColors = angular.module('letsLearnColors', []);
 
-function mainController($scope, $http) {
-  $scope.formData = {};
-
-  // when landing on the page, get all todos and show them
+mainController = function($scope, $http) {
+  $scope.playAudio = function() {
+    var audio = new Audio('aud/orange.wav');
+    console.log(audio);
+    audio.play();
+  };
   $http.get('/api/items')
     .success(function(data) {
       $scope.images = data;
-      console.log(data);
     })
     .error(function(data) {
       console.log('Error: ' + data);
     });
-
-}
+};
