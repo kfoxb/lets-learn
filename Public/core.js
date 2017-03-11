@@ -5,7 +5,7 @@ function mainController($scope, $http) {
   $scope.formData = {};
 
   // when landing on the page, get all todos and show them
-  $http.get('/api/img')
+  $http.get('/api/items')
     .success(function(data) {
       $scope.images = data;
       console.log(data);
