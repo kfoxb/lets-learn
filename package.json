@@ -18,9 +18,10 @@
   "dependencies": {
     "body-parser": "^1.9.2",
     "express": "^4.10.1",
+    "express-fileupload": "^0.1.2",
+    "mongoose": "^4.4.12",
     "morgan": "^1.4.1",
-    "request": "^2.69.0",
-    "mongoose": "^4.4.12"
+    "request": "^2.69.0"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
