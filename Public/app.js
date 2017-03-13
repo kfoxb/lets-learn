@@ -11,6 +11,6 @@ let letsLearnColors = angular.module('letsLearnColors', [])
           console.log('Error: ' + data);
         });
     },
-    template: '<h1>Let\'s Learn Colors</h1><items-container></items-container>',
+    template: '<h1>Let\'s Learn Family</h1><items-container></items-container>',
   };
 });
